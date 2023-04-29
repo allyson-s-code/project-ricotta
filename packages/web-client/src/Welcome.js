@@ -61,7 +61,7 @@ export default function Welcome() {
                 {item.heading ? (
                   <Typography variant="h1">{item.heading}</Typography>
                 ) : (
-                  <Typography variant="h1" style={{ fontSize: "34px" }}>
+                  <Typography variant="h1" style={{ fontSize: 34 }}>
                     {item.heading2}
                   </Typography>
                 )}
