@@ -46,6 +46,7 @@ export default function Welcome() {
       <Carousel
         className="welcome-carousel"
         elevation={0}
+        height={476}
         indicatorIconButtonProps={{
           style: { color: theme.palette.text.secondary },
         }}
@@ -55,7 +56,7 @@ export default function Welcome() {
       >
         {welcomeSlides.map((item, i) => {
           return (
-            <Card className="welcome-slide" key={item.i} elevation={0}>
+            <Card className="welcome-slide" key={i} elevation={0}>
               <img src={item.img} alt={item.alt} className="welcome-image" />
               <div className="slide-text">
                 {item.heading ? (
